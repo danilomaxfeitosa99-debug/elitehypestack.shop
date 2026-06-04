@@ -1,510 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Five Suplementos Tudo Que Seu Corpo Precisa LTDA</title>
-  <meta name="description" content="Pagina institucional da Five Suplementos Tudo Que Seu Corpo Precisa LTDA com dados empresariais, identificacao da organizacao e documentos legais.">
-  <style>
-    :root {
-      --bg: #f5f3f0;
-      --surface: #fffdfb;
-      --ink: #1f1a16;
-      --muted: #665a4f;
-      --accent: #765036;
-      --accent-soft: #efe4da;
-      --line: #ddd3c9;
-      --shadow: 0 18px 40px rgba(31, 26, 22, 0.08);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(180deg, #fbfaf8 0%, var(--bg) 100%);
-      color: var(--ink);
-      line-height: 1.7;
-    }
-    a { color: inherit; text-decoration: none; }
-    .wrap { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(251, 250, 248, 0.94);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(102, 90, 79, 0.14);
-    }
-    .topbar-inner {
-      min-height: 82px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      min-width: 0;
-    }
-    .brand-mark {
-      width: 54px;
-      height: 54px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(145deg, #765036, #583c28);
-      color: #fff8f2;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      box-shadow: var(--shadow);
-      flex: 0 0 auto;
-    }
-    .brand-copy strong,
-    .brand-copy span { display: block; }
-    .brand-copy strong { font-size: 1rem; }
-    .brand-copy span { color: var(--muted); font-size: 0.82rem; }
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 18px;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-    .nav a:hover,
-    .nav a:focus-visible { color: var(--accent); }
-    .hero { padding: 42px 0 20px; }
-    .hero-card,
-    .card,
-    .footer-wrap {
-      background: var(--surface);
-      border: 1px solid rgba(102, 90, 79, 0.12);
-      border-radius: 28px;
-      box-shadow: var(--shadow);
-    }
-    .hero-card { padding: 34px; }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.84rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-    .eyebrow::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-    }
-    h1, h2, h3 {
-      margin: 0;
-      line-height: 1.12;
-      letter-spacing: -0.03em;
-    }
-    h1 {
-      margin-top: 18px;
-      font-size: clamp(2.2rem, 5vw, 3.9rem);
-      max-width: 11ch;
-    }
-    .hero-card p {
-      margin: 18px 0 0;
-      max-width: 62ch;
-      color: #403730;
-      font-size: 1.03rem;
-    }
-    .hero-points,
-    .services-grid,
-    .about-grid,
-    .contact-grid,
-    .footer-top,
-    .fiscal { display: grid; gap: 20px; }
-    .hero-points { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 26px; }
-    .point,
-    .service-card,
-    .about-copy,
-    .about-side,
-    .contact-panel,
-    .identity-panel { padding: 24px; }
-    .point {
-      border-radius: 20px;
-      background: #faf5ef;
-      border: 1px solid rgba(102, 90, 79, 0.1);
-    }
-    .point strong { display: block; margin-bottom: 6px; }
-    .point span,
-    .service-card p,
-    .detail span,
-    .section-head p,
-    .about-copy p,
-    .about-side p,
-    .cta-band p { color: var(--muted); }
-    section { padding: 22px 0; }
-    .section-head {
-      display: grid;
-      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-      gap: 24px;
-      align-items: end;
-      margin-bottom: 20px;
-    }
-    .section-head h2 { font-size: clamp(1.9rem, 3vw, 2.9rem); }
-    .section-head p { margin: 0; }
-    .about-grid,
-    .contact-grid,
-    .footer-top { grid-template-columns: 1fr 1fr; }
-    .about-copy p,
-    .about-side p,
-    .contact-panel p,
-    .identity-panel p { margin: 0 0 16px; }
-    .about-copy p:last-child,
-    .about-side p:last-child,
-    .contact-panel p:last-child,
-    .identity-panel p:last-child { margin-bottom: 0; }
-    .services-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .service-index {
-      display: inline-flex;
-      width: 38px;
-      height: 38px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      margin-bottom: 14px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-weight: 700;
-    }
-    .service-card h3 { font-size: 1.14rem; margin-bottom: 10px; }
-    .detail-list {
-      display: grid;
-      gap: 14px;
-      margin-top: 18px;
-    }
-    .detail {
-      padding: 16px 18px;
-      border-radius: 18px;
-      background: #faf5ef;
-      border: 1px solid rgba(102, 90, 79, 0.1);
-    }
-    .detail strong {
-      display: block;
-      margin-bottom: 4px;
-      font-size: 0.95rem;
-    }
-    .detail span {
-      display: block;
-      font-size: 0.94rem;
-      word-break: break-word;
-    }
-    .cta-band {
-      margin: 6px 0 4px;
-      padding: 24px;
-      border-radius: 24px;
-      background: linear-gradient(135deg, #4e3423, #765036 55%, #9a755c 100%);
-      color: #fff8f2;
-      box-shadow: var(--shadow);
-    }
-    .cta-band strong {
-      display: block;
-      font-size: 1.18rem;
-      margin-bottom: 6px;
-    }
-    footer { padding: 0 0 40px; }
-    .footer-wrap {
-      padding: 30px;
-      background: #211a15;
-      color: #f8efe8;
-    }
-    .footer-top {
-      padding-bottom: 24px;
-      border-bottom: 1px solid rgba(248, 239, 232, 0.12);
-    }
-    .footer-top p {
-      margin: 10px 0 0;
-      color: rgba(248, 239, 232, 0.76);
-      max-width: 60ch;
-    }
-    .footer-links {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px 18px;
-      align-content: start;
-    }
-    .footer-links a:hover,
-    .footer-links a:focus-visible { color: #ffd7c0; }
-    .fiscal {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      margin-top: 22px;
-    }
-    .fiscal-box {
-      padding: 16px 18px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(248, 239, 232, 0.08);
-    }
-    .fiscal-box strong {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 0.92rem;
-    }
-    .fiscal-box span {
-      display: block;
-      color: rgba(248, 239, 232, 0.78);
-      font-size: 0.93rem;
-    }
-    @media (max-width: 960px) {
-      .section-head,
-      .about-grid,
-      .contact-grid,
-      .footer-top,
-      .services-grid,
-      .fiscal,
-      .hero-points { grid-template-columns: 1fr; }
-      .topbar-inner {
-        min-height: auto;
-        padding: 12px 0;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-    }
-    @media (max-width: 640px) {
-      .wrap { width: min(100% - 20px, 1100px); }
-      .hero-card,
-      .point,
-      .service-card,
-      .about-copy,
-      .about-side,
-      .contact-panel,
-      .identity-panel,
-      .footer-wrap {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      .footer-links { grid-template-columns: 1fr; }
-      .nav { font-size: 0.86rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Életerő és Egyensúly - Tudományos Felfedezés</title>
+    <style>
+        body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        header { border-bottom: 3px solid #b22222; margin-bottom: 30px; padding-bottom: 10px; text-align: center; }
+        h1 { color: #b22222; font-size: 2.5em; margin: 10px 0; }
+        .tagline { font-style: italic; color: #666; font-size: 1.1em; }
+        .hero-img { width: 100%; border: 3px dashed #228b22; border-radius: 10px; margin: 20px 0; cursor: pointer; }
+        .cta-button { display: block; width: 90%; max-width: 400px; margin: 30px auto; padding: 20px; background: linear-gradient(to bottom, #ffd700, #daa520); color: #000; text-align: center; text-decoration: none; font-weight: bold; font-size: 1.5em; border-radius: 50px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.2s; }
+        .cta-button:hover { transform: scale(1.05); }
+        .content { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .highlight { background-color: #fff3cd; padding: 5px; font-weight: bold; }
+        .footer { margin-top: 50px; padding: 20px; border-top: 1px solid #ddd; font-size: 0.8em; color: #777; text-align: center; }
+        .disclaimer { font-style: italic; margin-bottom: 20px; }
+        .nav-links { margin-top: 10px; }
+        .nav-links a { color: #777; text-decoration: none; margin: 0 10px; }
+        .nav-links a:hover { text-decoration: underline; }
+        .author-box { display: flex; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .author-img { width: 50px; height: 50px; border-radius: 50%; background-color: #ddd; margin-right: 15px; }
+        .author-info { font-size: 0.9em; }
+    </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a class="brand" href="#inicio" aria-label="Ir para o inicio">
-        <div class="brand-mark" aria-hidden="true">FVE</div>
-        <div class="brand-copy">
-          <strong>Five Suplementos Tudo Que Seu Corpo Precisa LTDA</strong>
-          <span>Apresentacao institucional da organizacao</span>
+
+<header>
+    <div class="tagline">Tudomány és Természet az Érett Korban</div>
+    <h1>Életerő és Egyensúly</h1>
+</header>
+
+<div class="content">
+    <div class="author-box">
+        <div class="author-img"></div>
+        <div class="author-info">
+            <strong>Szerző: Kovács Anna</strong><br>
+            <span>Egészségügyi szakíró | 2026. június 4.</span>
         </div>
-      </a>
-      <nav class="nav" aria-label="Navegacao principal">
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre">Sobre Nos</a>
-        <a href="#servicos">Produtos/Servicos</a>
-        <a href="#contato">Contato</a>
-      </nav>
     </div>
-  </header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="wrap">
-        <div class="hero-card">
-          <span class="eyebrow">Presenca institucional</span>
-          <h1>Ambiente objetivo para apresentar a empresa, seus dados empresariais e sua base legal.</h1>
-          <p>
-            Esta pagina foi estruturada para concentrar as principais informacoes institucionais da
-            Five Suplementos Tudo Que Seu Corpo Precisa LTDA em um ambiente claro, leve e responsivo.
-          </p>
-          <p>
-            O foco desta estrutura e manter associacao direta entre nome empresarial, endereco, CNPJ,
-            documentos legais e navegacao simples, sem elementos desnecessarios.
-          </p>
-          <div class="hero-points">
-            <div class="point">
-              <strong>Identificacao clara</strong>
-              <span>Nome da organizacao, estrutura principal e dados empresariais apresentados em texto real.</span>
-            </div>
-            <div class="point">
-              <strong>Conteudo suficiente</strong>
-              <span>Secoes institucionais objetivas para contextualizar a empresa e sua apresentacao digital.</span>
-            </div>
-            <div class="point">
-              <strong>Base legal acessivel</strong>
-              <span>Links permanentes para Politica de Privacidade, Termos, Aviso Legal e Reembolso.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <p>Sokunk számára az 40-es és 50-as évek az élet legszebb időszakai kellene, hogy legyenek. Azonban gyakran egy láthatatlan ellenség árnyékolja be a mindennapjainkat: a <span class="highlight">vércukorszint ingadozása</span> és az ezzel járó állandó fáradtság.</p>
 
-    <section id="sobre">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Sobre Nos</h2>
-          <p>
-            Esta secao apresenta quem e a empresa, onde esta localizada e como sua presenca digital foi
-            organizada para manter consistencia entre operacao, dominio e identificacao empresarial.
-          </p>
-        </div>
-        <div class="about-grid">
-          <article class="card about-copy">
-            <p>
-              A Five Suplementos Tudo Que Seu Corpo Precisa LTDA, inscrita no CNPJ 64.919.181/0001-37,
-              e uma empresa brasileira legalmente constituida, com endereco empresarial em Itabaiana - SE.
-            </p>
-            <p>
-              Sua presenca digital e utilizada para apresentacao institucional da organizacao, da sua
-              identidade comercial e das informacoes relacionadas a sua operacao. A pagina concentra os
-              principais dados cadastrais da empresa em texto real e navegacao simples.
-            </p>
-            <p>
-              A estrutura busca reforcar a associacao entre nome empresarial, endereco, base legal e
-              documentos acessiveis, oferecendo uma apresentacao direta e consistente da empresa.
-            </p>
-          </article>
-          <aside class="card about-side">
-            <p>
-              A arquitetura do site foi planejada para manter leitura objetiva, identificacao constante
-              da organizacao e acesso facil as paginas legais vinculadas ao dominio.
-            </p>
-            <p>
-              Isso facilita a compreensao do visitante sobre quem e a empresa, onde ela esta sediada e
-              onde consultar sua documentacao institucional.
-            </p>
-            <p>
-              O resultado e um ambiente estavel, responsivo e adequado para centralizar os elementos
-              essenciais da Five Suplementos Tudo Que Seu Corpo Precisa LTDA.
-            </p>
-          </aside>
-        </div>
-      </div>
-    </section>
+    <a href="<script type="text/javascript" src="https://lp.elitehypestack.shop/pretrack"><img src="img/senior_health_v7_hero.png" alt="Boldog idős pár" class="hero-img"></a>
 
-    <section id="servicos">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Produtos/Servicos</h2>
-          <p>
-            Como se trata de uma pagina institucional, esta secao organiza a funcao do site e a forma
-            como a empresa se apresenta digitalmente ao publico.
-          </p>
-        </div>
-        <div class="services-grid">
-          <article class="card service-card">
-            <span class="service-index">01</span>
-            <h3>Apresentacao empresarial</h3>
-            <p>
-              O site reune nome da empresa, dados cadastrais, endereco e informacoes basicas de
-              identificacao institucional.
-            </p>
-          </article>
-          <article class="card service-card">
-            <span class="service-index">02</span>
-            <h3>Comunicacao objetiva</h3>
-            <p>
-              O conteudo foi estruturado para ser direto, legivel e suficiente, sem excesso de elementos
-              promocionais ou blocos vazios.
-            </p>
-          </article>
-          <article class="card service-card">
-            <span class="service-index">03</span>
-            <h3>Documentos legais</h3>
-            <p>
-              Politica de Privacidade, Termos de Uso, Aviso Legal e Politica de Reembolso ficam
-              disponiveis para consulta continua do usuario.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <a href="<script type="text/javascript" src="https://lp.elitehypestack.shop/pretrack" class="cta-button">NÉZZE MEG A VIDEÓT MOST</a>
 
-    <section id="contato">
-      <div class="wrap">
-        <div class="cta-band">
-          <strong>Empresa identificada, dados empresariais visiveis e estrutura legal acessivel.</strong>
-          <p>
-            Esta pagina foi criada para apresentar a Five Suplementos Tudo Que Seu Corpo Precisa LTDA
-            de forma direta e consistente, com associacao clara entre organizacao, CNPJ e endereco.
-          </p>
-        </div>
-        <div class="contact-grid">
-          <div class="card contact-panel">
-            <h2>Contato e identificacao</h2>
-            <div class="detail-list">
-              <div class="detail">
-                <strong>Razao social</strong>
-                <span>Five Suplementos Tudo Que Seu Corpo Precisa LTDA</span>
-              </div>
-              <div class="detail">
-                <strong>Endereco empresarial</strong>
-                <span>Avenida Nivalda Lima Figueiredo 601, Anizio Amancio de Oliveira, Itabaiana - SE, 49503-396, Brasil</span>
-              </div>
-              <div class="detail">
-                <strong>Pais de operacao</strong>
-                <span>Brasil</span>
-              </div>
-            </div>
-          </div>
-          <div class="card identity-panel">
-            <h2>Base institucional</h2>
-            <div class="detail-list">
-              <div class="detail">
-                <strong>CNPJ</strong>
-                <span>64.919.181/0001-37</span>
-              </div>
-              <div class="detail">
-                <strong>Cidade sede</strong>
-                <span>Itabaiana - SE</span>
-              </div>
-              <div class="detail">
-                <strong>Documentos legais</strong>
-                <span>Politica de Privacidade, Termos de Uso, Aviso Legal e Politica de Reembolso/Devolucao.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+    <p>Egy nemrégiben napvilágot látott tudományos felfedezés azonban rávilágított egy elfeledett "mechanizmusra", amely kulcsfontosságú lehet a szervezet belső egyensúlyának fenntartásában. Ez a felfedezés nem a gyógyszertárak polcairól származik, hanem a természet egyik legősibb kincséből.</p>
 
-  <footer>
-    <div class="wrap footer-wrap">
-      <div class="footer-top">
-        <div>
-          <strong>Five Suplementos Tudo Que Seu Corpo Precisa LTDA</strong>
-          <p>
-            Pagina institucional desenvolvida para reunir identificacao empresarial, dados cadastrais e
-            documentos legais em um unico ambiente claro e responsivo.
-          </p>
-        </div>
-        <nav class="footer-links" aria-label="Links legais">
-          <a href="privacy.html">Politica de Privacidade</a>
-          <a href="terms.html">Termos de Uso</a>
-          <a href="disclaimer.html">Aviso Legal</a>
-          <a href="refund.html">Politica de Reembolso/Devolucao</a>
-        </nav>
-      </div>
-      <div class="fiscal">
-        <div class="fiscal-box">
-          <strong>Razao social completa</strong>
-          <span>Five Suplementos Tudo Que Seu Corpo Precisa LTDA</span>
-        </div>
-        <div class="fiscal-box">
-          <strong>CNPJ</strong>
-          <span>64.919.181/0001-37</span>
-        </div>
-        <div class="fiscal-box">
-          <strong>Endereco completo</strong>
-          <span>Avenida Nivalda Lima Figueiredo 601, Anizio Amancio de Oliveira, Itabaiana - SE, 49503-396, Brasil</span>
-        </div>
-      </div>
+    <p>A kutatók egy különleges <span class="highlight">"Szent Olajról"</span> beszélnek, amely képes lehet újraaktiválni a sejtek természetes energiafelvételét. Ez a folyamat különösen fontos az érett korban, amikor a szervezet már nem úgy dolgozza fel a tápanyagokat, mint korábban.</p>
+
+    <div style="text-align: center;">
+        <a href="<script type="text/javascript" src="https://lp.elitehypestack.shop/pretrack"><img src="img/natural_oil_v7_macro.png" alt="Természetes olaj csepp" class="hero-img" style="max-width: 400px;"></a>
     </div>
-  </footer>
+
+    <p>Miért hallgatnak erről a nagyvállalatok? Miért nem beszélnek erről a televízióban? A válasz egyszerűbb, mint gondolná. Ez a természetes módszer túl hatékony és túl olcsó ahhoz, hogy profitot termeljen a modern iparnak.</p>
+
+    <p>Ha Ön is szeretné visszanyerni a vitalitását, és természetes módon támogatni szervezete <span class="highlight">cukor-anyagcseréjét</span>, akkor látnia kell ezt a prezentációt, mielőtt eltávolítják az internetről.</p>
+
+    <a href="<script type="text/javascript" src="https://lp.elitehypestack.shop/pretrack" class="cta-button">FEDEZZE FEL A TITKOT</a>
+</div>
+
+<div class="footer">
+    <div class="disclaimer">
+        <strong>NYILATKOZAT:</strong> Ez az oldal kizárólag tájékoztató jellegű, és nem minősül orvosi tanácsadásnak. Az itt közölt információk nem helyettesítik a szakemberrel való konzultációt. Az egyéni eredmények eltérőek lehetnek. Mindig konzultáljon kezelőorvosával, mielőtt bármilyen új étrend-kiegészítőt vagy életmódbeli változtatást vezetne be.
+    </div>
+    <p>
+        <strong>Five Suplementos Tudo Que Seu Corpo Precisa LTDA</strong><br>
+        CNPJ: 64.919.181/0001-37<br>
+        Avenida Nivalda Lima Figueiredo, 601, Anízio Amancio de Oliveira, Itabaiana - SE, CEP 49503-396
+    </p>
+    <div class="nav-links">
+        <a href="privacy.html">Adatvédelmi irányelvek</a> | 
+        <a href="terms.html">Felhasználási feltételek</a>
+    </div>
+    <p>&copy; 2026 Életerő és Egyensúly. Minden jog fenntartva.</p>
+</div>
+<script type="text/javascript" src="https://lp.elitehypestack.shop/pretrack.js?rtkcmpid=6a17b42aa4828631eec629e8"></script>
 </body>
 </html>
